@@ -3,19 +3,20 @@ import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Toolbar from '@mui/material/Toolbar'
+import {Container} from '@mui/material'
 
 
 const NavBar = () => {
-  return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position='static' >
+    return (
+    <AppBar position='static' >
+      <Container >
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h6" component="a" >
             ShooterCrow
           </Typography>
         </Toolbar>
-      </AppBar>
-    </Box >
+      </Container>
+    </AppBar>
   )
 }
 
